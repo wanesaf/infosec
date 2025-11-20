@@ -162,7 +162,7 @@ fn sign_in(fpath: &str, fail: &mut u32) {
                 }
             }
         }
-        Err(_) => panic!("Error when trying to open the file"),
+        Err(_) => {}
     };
     println!("Invalid username or password");
     *fail += 1;
